@@ -1,93 +1,226 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--information données au navigateur-->
         <meta charset="utf-8" />
-        <!-- font -->
-        <script src="https://kit.fontawesome.com/1e22565bce.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--Référencement naturel-->
         <title>Reservia - Projet 2</title>
+        <meta name="description" content="" />
+
+        <!-- Feuilles de Styles -->
+        <script src="https://kit.fontawesome.com/1e22565bce.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     
     <!-- contenu du site  -->
     <body>
         <!-- beginning header -->
-        <header class="container-fluid header">
-            <div class="container">
-                <a href="#" class="logo"> Réservia </a>
-                <nav class="menu">
-                    <a href="#" > Accueil </a>
-                    <a href="#" > A Propos </a>
-                </nav>
-
-
-            </div>
-
+        <header class="main-header">
+            <!--dans le header principal, il y aura le logo à gauche puis une liste pour le menu-->
+            <img src="image/logo/Reservia@3x.png" alt="logo Réservia" height="37">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#bigboxH" > Hébergements </a></li>
+                    <li><a href="#" > Activités </a></li>
+                    <li><a class="bleuGras" href="#" > S'inscrire </a></li>
+                </ul>
+            </nav>
+        
         </header>
         <!-- end header -->
 
-        <!-- bannière -->
-        <section class="container-fluid banner">
+        <!--Section Filtre-->
 
-        </section>
-        <!--end bannière-->
+        <!--Fin section Filtre-->
 
-        <!-- A propos -->
-        <section class="container-fluid about">
-
-        </section>
-        <!-- end A propos -->
-       
-        <!-- Filtre -->
-        <section class="container-fluid filter">
-
-        </section>
-        <!-- end Filtre -->
-
-        <!-- Hebergement -->
-        <section class="container-fluid home">
+        <!-- Hebergement en deux section : Hebergements bigboxH et Les plus populaires dans Box2-->
+        <section class="hebergement">
+            <!--bocx hebergement sur 70% de la largeur de la page un titre en h1, une boite  de boites détails des héhergements et une phrase en dessous en h3-->
+            <div id=bigboxH>
+                <!--Titre-->
+                <h1>Hébergements à Marseille</h1>
+                <!--la boite contenant les petites boites détails des hébergements-->
+                <div id="box1">
+                    <div class="detail">
+                        <div class="image" style="background-image: url(image/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);"> </div>
+                        <div class="texte">
+                            <h2>Auberge la Cannebière</h2>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                            <div class="etoiles">                      
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="gray"><i class="fas fa-star"></i></div>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="image" style="background-image: url(image/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);"> </div>
+                        <div class="texte">
+                            <h2>Hotel du port</h2>
+                            <p>Nuit à partir de 52<strong>€</strong></p>
+                            <div class="etoiles">                     
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="image" style="background-image: url(image/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);"> </div>
+                        <div class="texte">
+                            <h2>Hotel les Mouettes</h2>
+                            <p>Nuit à partir de 76<strong>€</strong></p>
+                            <div class="etoiles">                      
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="gray"><i class="fas fa-star"></i></div>                                
+                            </div>  
+                        </div>                  
+                    </div>
+                    <div class="detail">
+                        <div class="image" style="background-image: url(image/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);"> </div>
+                        <div class="texte">
+                            <h2>Hotel de la mer</h2>
+                            <p>Nuit à partir de 46<strong>€</strong></p>
+                            <div class="etoiles">
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="gray"><i class="fas fa-star"></i></div>
+                                <div class="gray"><i class="fas fa-star"></i></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="image" style="background-image: url(image/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);"> </div>
+                        <div class="texte">
+                            <h2>Auberge le Panier</h2>
+                            <p>Nuit à partir de <strong>23€</strong></p>
+                            <div class="etoiles">
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="gray"><i class="fas fa-star"></i></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <!--<img src= "image/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" >-->
+                        <div class="image" style="background-image: url(image/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);"> </div>
+                        <div class="texte">
+                            <h2>Hôtel chez Amina</h2>
+                            <p>Nuit à partir de 96<strong>€</strong></p>
+                            <div class="etoiles">
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div> 
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <!--la phrase de fin -->
+                <h3>Afficher plus</h3>
+            </div>
+            <!-- les plus populaires à droites des hébergements dans les 30% restants-->
+            <div id="bigboxPopu">
+                <!--Titre-->
+                <div class="titrePopu">
+                    <h1>Les plus populaires </h1>
+                    <div><i class="fas fa-chart-line"></i></div> 
+                </div>
+                
+                
+                <!--la boite contenant les petites boites détails des Populaires-->
+                <div id="box2">
+                    <div class="detailPopu">
+                        <div class="imagePopu" style="background-image: url(image/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);"> </div>
+                        <div class="textePopu">
+                            <h2>Hôtel le soleil du matin</h2>
+                            <p>Nuit à partir de 128<strong>€</strong></p>
+                            <div class="etoiles">                      
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="detailPopu">
+                        <div class="imagePopu" style="background-image: url(image/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg);"> </div>
+                        <div class="textePopu">
+                            <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                            <p>Nuit à partir de 71<strong>€</strong></p>
+                            <div class="etoiles">                      
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="gray"><i class="fas fa-star"></i></div>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="detailPopu">
+                        <div class="imagePopu" style="background-image: url(image/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);"> </div>
+                        <div class="textePopu">
+                            <h2>Hôtel Tout bleu de Blanc</h2>
+                            <p>Nuit à partir de 68<strong>€</strong></p>
+                            <div class="etoiles">                      
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="blue"><i class="fas fa-star"></i></div>
+                                <div class="gray"><i class="fas fa-star"></i></div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
         <!-- end Hebergement -->
 
+
         <!-- Activites -->
-        <section class="container-fluid activity">
+        <section class="boxActivites">
 
         </section>
         <!-- end Activites -->
 
-        <!-- footer -->
-        <footer class="container-fluid footer">
+        <!-- A propos -->
+        <footer class="boxFooter">
+            <div>
+                <h1>A propos</h1>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales de vente</p>
+                <p>Données et confidentialité</p>
+            </div>
+            <div>
+                <h1>Nos hébergements</h1> 
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+            </div>
+            <div>
+                <h1>Assistance</h1>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </div>
+
 
         </footer>
-        <!-- end footer-->
-
-
-
-
-    	<p>
-    		Ci-dessous une splendide image :<br>
-    		<img src="image\BBXHIa9.jpg" alt="photo de chat">
-    		<a href="image/pangounetsurtable.jpg"><img src="image/labyritheverdure_mini.jpg" alt="photo de labyrinthe" title="splendide labyrinthe" /></a>
-    			<br>
-
-    	</p>
-
-        <p>
-            On essaye les liens dynamiques ci dessous <br>
-            <a href="pageCV.html"> Le lien qui va changer de couleur quand on passe dessus</a>
-        </p>
-
-
-
-    	<p>
-    		sur une <strong>autre</strong> ligne<br>
-    		<img src="image/zozor.png" title="il est beau zozor en png!">
-    	</p>
-
-    	<p>et pour ne pas oublier les <strong><em>animations</em></strong> en gif:
-<img src="image/eaht.gif" alt="animation de la terre">
-    	</p>
-   
+        <!-- end A propos -->
+       
+    
     </body>
 </html>

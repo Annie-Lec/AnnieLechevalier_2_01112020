@@ -1,2 +1,247 @@
 /*@charset="utf-8"*/
-/* font-family: 'Raleway', Sans-serif;*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/font/Raleway-ExtraBold.ttf');
+}
+body{
+    background-color: white;
+    font-family: 'Raleway', Sans-serif;
+    margin: 0;
+}
+
+
+.main-header{
+    background-image: url("/image/logo/Reservia@3x.png");
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    align-items: center;
+    /*Logo et menu en grille*/
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.menu{
+    display: flex;
+    font-size: 14px;
+    line-height: 3rem;
+    /*flex: 1;*/
+    justify-content: space-around;
+    /*pas de puce devant les éléments de menu*/
+    list-style: none;
+    align-items: center;
+    margin-left : 150px;
+
+}
+
+a{
+    color:rgba(144, 144, 144);
+    text-decoration: none;
+    border-top: 2px solid white;
+    padding-top: 20px;
+    border-top: over;
+}
+a:hover /* Apparence au survol des liens */
+{
+    color: blue;
+    border-top: 2px solid blue;
+}
+a:focus{
+    color:gray;
+}
+.bleuGras{
+    color:blue;
+    font-weight: bold;
+}
+
+
+.hebergement{
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+#bigboxH{
+    width: 70%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 30px;
+}
+h1{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+h3{
+    font-size: 17px;
+    margin: 20px;
+    line-height: 51px;
+}
+
+
+#box1{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px;
+}
+
+.detail{
+    border: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px lightgray;
+    padding: 5px;
+    display: block;
+    flex-direction: column;
+    margin: 10px;
+}
+.image {
+    background-size: cover;
+    background-position-y: center;
+    /*align-items:stretch;*/
+    width: 100%;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+    display: grid;
+    overflow: hidden;
+}
+.texte{
+    overflow: hidden;
+    background-color: white;
+    display: grid;
+    flex-direction: column;
+    padding-left: 15px;
+    border-radius:  0 0 20px 20px;
+   
+}
+h2{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 7px;
+    
+}
+p{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 6px;
+    margin-top: 0;
+}
+.blue{
+    color :  rgb(0, 101, 252);
+    margin-left : 1px;
+}
+.gray{
+    color : lightgray; 
+    margin-left : 1px;
+}
+.etoiles{
+    /*margin-left: 0.9rem;*/
+    font-size: 9px;
+    margin-top: -0.2rem;
+    display: flex;
+    /*line-height: 5px;*/
+    margin-bottom: 5px;
+}
+
+
+#bigboxPopu{
+    width: 30%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.titrePopu{
+    font-size: 18px;
+    margin-left: 0px;
+    /*margin-top: 35px;*/
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.titrePopu h1{
+    font-size: 18px;
+    /*margin-left: 20px;
+    margin-top: 35px;
+    margin-bottom: 5px;*/
+}
+#box2{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    display: Flex;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.detailPopu{
+    border: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px lightgray;
+    padding: 3px;
+    display: flex;
+    margin: 1rem;
+    height: 125px;
+}
+.imagePopu{
+    background-size: cover;
+    background-position-y: left;
+    width: 125px;
+    /*height: 100%;*/
+    border-radius:  20px 0 0 20px;
+    display: grid;
+    overflow: hidden;
+
+}
+.textePopu{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    
+    border-radius:   0 20px 20px 0 ;
+    justify-content: flex-start;
+    
+    
+   
+}
+.textePopu h2{
+    line-height: 14px; 
+}
+
+.textePopu p{
+    
+    /*margin-bottom: 40px;*/
+ }
+
+
+
+.boxFooter{
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.boxFooter div{
+    margin: 2rem;
+}
+.boxFooter h1{
+    font-size: 16px;
+}
+.boxFooter p{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
