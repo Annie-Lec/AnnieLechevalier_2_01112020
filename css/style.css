@@ -125,8 +125,7 @@ p{
     padding: 0 10px;
     font-size: 15px;
     text-align: center;
-    color: #fff;
-    
+    color: white;
     border-radius: 0 10px 10px 0;
     background-color: blue;
     
@@ -139,7 +138,7 @@ p{
     font-size: 14px;
     border-radius: 10px 0 0 10px ;
     background-color: rgb(242, 242, 242);
-    border-color:red;
+
 }
 
 .inputVille{
@@ -162,23 +161,26 @@ p{
 
 .filtreDetails{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
-    
+    grid-template-columns: 70px 1fr 1fr 1fr 1fr  ;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
     height: 45px;
+    background-color: green;
 }
 .detailFiltreDetails{
-    display: flex;
+    display: grid;
+    grid-template-columns: 45px 150px;
+    height: inherit;
 }
 .puceDuLibelle{
     height: inherit;
+    width: 45px;
     display: block; 
     text-align: center;
-    line-height: inherit;
     background-color: red;
-    border-radius: 50%;
+    border-radius: 50px;
 }
+
 
 /* Partie section hebergement */
 .sectionHebergement{
