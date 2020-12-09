@@ -19,7 +19,7 @@
         <!-- beginning header -->
         <header class="main-header">
             <!--dans le header principal, il y aura le logo à gauche puis une liste pour le menu-->
-            <img src="image/logo/Reservia@3x.png" alt="logo Réservia" height="37">
+            <a href="index.html"><img src="image/logo/Reservia@3x.png" alt="logo Réservia" height="37"></a>
             <nav>
                 <ul class="menu">
                     <li><a href="#bigboxH" > Hébergements </a></li>
@@ -40,9 +40,14 @@
             </div>
 
             <div class="fltreRecherche">
-                <div class="puceNavig"> <i class="fas fa-map-marker-alt"></i></div>
+                <div class="puceNavig">
+                    <!-- le i dans un label qui va pointer vers search de l input-->
+                    <label for="search">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                </div>
                 <div class="inputVille">
-                    <input type="text" placeholder="Marseille, France" />
+                    <input type="text" placeholder="Marseille, France" id="search"/>
                 </div>
                 <button class="styleBouton" type="button"> 
                     Rechercher
@@ -90,9 +95,9 @@
                 <!--la boite contenant les petites boites détails des hébergements-->
                 <div class="box1">
                     <div class="detail">
-                        
-                        <img class="image" src="image/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
-                        
+                        <div class="vignetteImage">
+                            <img class="image" src="image/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
+                        </div>
                         <div class="texte">
                             <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <span class="texteGras">25€</span></p>
@@ -106,7 +111,9 @@
                         </div>
                     </div>
                     <div class="detail">
-                        <img class="image" src="image/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="kleber" /> 
+                        <div class="vignetteImage">
+                            <img class="image" src="image/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="kleber" /> 
+                        </div>
                         <div class="texte">
                             <h3>Hotel du port</h3>
                             <p>Nuit à partir de 52<span class="texteGras">€</span></p>
@@ -120,7 +127,9 @@
                         </div>
                     </div>
                     <div class="detail">
-                        <img class="image" src="image/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="reisetopia"> 
+                        <div class="vignetteImage">
+                            <img class="image" src="image/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="reisetopia"> 
+                        </div>
                         <div class="texte">
                             <h3>Hotel les Mouettes</h3>
                             <p>Nuit à partir de 76<span class="texteGras">€</span></p>
@@ -134,7 +143,9 @@
                         </div>                  
                     </div>
                     <div class="detail">
-                        <img class="image" src="image/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg"> 
+                        <div class="vignetteImage">                    
+                            <img class="image" src="image/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg"> 
+                        </div>
                         <div class="texte">
                             <h3>Hotel de la mer</h3>
                             <p>Nuit à partir de 46<span class="texteGras">€</span></p>
@@ -148,7 +159,9 @@
                         </div>
                     </div>
                     <div class="detail">
-                        <img class="image" src="image/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="nicate-lee" > 
+                        <div class="vignetteImage">
+                            <img class="image" src="image/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="nicate-lee" > 
+                        </div>
                         <div class="texte">
                             <h3>Auberge le Panier</h3>
                             <p>Nuit à partir de <span class="texteGras">23€</span></p>
@@ -162,8 +175,10 @@
                         </div>
                     </div>
                     <div class="detail">
+                        <div class="vignetteImage">
                         <!--<img src= "image/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" >-->
-                        <img class="image" src="image/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="feb zakaria"> 
+                            <img class="image" src="image/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="feb zakaria"> 
+                        </div>
                         <div class="texte">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96<span class="texteGras">€</span></p>
@@ -176,10 +191,10 @@
                             </div>
                         </div>
                     </div>                
-                </div>
-                <!--la phrase de fin dans la bigboxH-->
+                </div> <!--fin box1-->
+                <!--la phrase de fin dans la bigboxH, c'est un lien-->
                 
-                <a class="NoirPlus" href="#" > Afficher plus </a>
+                <div class="affichePlus"><a class="NoirPlus" href="#" > Afficher plus </a></div>
                 
             </div>
             
@@ -267,7 +282,7 @@
 
                     </div>
                     <div class="detailActivite">
-                        <img class="imageActivite2" src="image/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"> 
+                        <img class="imageActivite3" src="image/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"> 
                         <div class="texteActivite">
                             <h3>Iles du Frioul</h3>
                         </div>
@@ -303,10 +318,7 @@
 
                 </div>
             
-
-
             </div>
-
 
         </section>
         <!-- end Activites -->
@@ -315,26 +327,24 @@
         <footer class="boxFooter">
             
             <ul>
-                <li><a class="NoirPlus" href="#bigboxH"> A propos </a></li>
+                <li class="NoirPlus">  A propos </li>
                 <li><a href="#" > Fonctionnement du site </a></li>
                 <li><a href="#" > Conditions générales de vente </a></li>
                 <li><a href="#" > Données et confidentialité </a></li>
             </ul>
             <ul>
-                <li><a class="NoirPlus" href="#bigboxH"> Nos hébergements </a></li>
+                <li class="NoirPlus"> Nos hébergements </li>
                 <li><a href="#" > Charte qualité </a></li>
                 <li><a href="#" > Soumettre votre hôtel </a></li>
             </ul>
             <ul>
-                <li><a class="NoirPlus" href="#bigboxH"> Assistance </a></li>
+                <li class="NoirPlus"> Assistance </li>
                 <li><a href="#" > Centre d'aide </a></li>
                 <li><a href="#" > Nous contacter </a></li>
             </ul>
-        
-        
+                
         </footer>
-        <!-- end A propos -->
-       
-    
+        <!-- end du footer A propos -->
+           
     </body>
 </html>
