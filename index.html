@@ -20,14 +20,20 @@
         <header class="main-header">
             <!--dans le header principal, il y aura le logo à gauche puis une liste pour le menu-->
             <a href="index.html"><img src="image/logo/Reservia@3x.png" alt="logo Réservia" height="37"></a>
-            <nav>
+           <!--- <nav>
                 <ul class="menu">
                     <li><a href="#bigboxH" > Hébergements </a></li>
                     <li><a href="#listeActivite" > Activités </a></li>
                     <li><a class="bleuGras" href="#" > S'inscrire </a></li>
-                </ul>
-            </nav>
-        
+                </ul> 
+            </nav> -->
+            <nav class="menu">
+                <div class="petitMenu">
+                    <a href="#bigboxH" > Hébergements </a>
+                    <a href="#listeActivite" > Activités </a>
+                </div>
+                <a class="bleuGras" href="#" > S'inscrire </a> 
+            </nav>           
         </header>
         <!-- end header -->
 
@@ -36,7 +42,6 @@
             <div class="filtreTitre">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-
             </div>
 
             <div class="fltreRecherche">
@@ -49,8 +54,11 @@
                 <div class="inputVille">
                     <input type="text" placeholder="Marseille, France" id="search"/>
                 </div>
-                <button class="styleBouton" type="button"> 
-                    Rechercher
+                <button class="styleBouton" type="button">
+                    <div class="RechercheTexte">
+                        Rechercher
+                    </div> 
+                    <i class="fas fa-search"></i>
                 </button>
             </div>
             
@@ -79,7 +87,6 @@
             <div class="filtreInfo">
                 <div class="puceDeLInfo"><i class="fas fa-info-circle"></i></div>
                 <div class="textInfo">Plus de 500 logements sont disponibles dans cette ville</div>
-
             </div>
 
         </section>
@@ -264,7 +271,7 @@
             <!--Titre-->
             <h2>Activités à Marseille</h2>
             <div id="listeActivite">
-                <div class="uneActivite">
+                <div> <!--une seule activite pas de classe specifique-->
                     <div class="detailActivite">
                         <img class="imageActivite" src="image/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"> 
                         <div class="texteActivite">
@@ -290,7 +297,7 @@
                     </div>
 
                 </div>
-                <div class="uneActivite">
+                <div> <!--une seule activite pas de classe specifique-->
                     <div class="detailActivite">
                         <img class="imageActivite" src="image/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"> 
                         <div class="texteActivite">
@@ -313,11 +320,8 @@
                         <div class="texteActivite">
                             <h3>Parc Longchamp</h3>
                         </div>
-
                     </div>
-
-                </div>
-            
+                </div>          
             </div>
 
         </section>
@@ -325,22 +329,22 @@
 
         <!-- A propos -->
         <footer class="boxFooter">
-            
+            <!-- géré en liste plutot qu'en hx et liste car les libellés des "titres" ne sont pas des mots clés-->
             <ul>
                 <li class="NoirPlus">  A propos </li>
-                <li><a href="#" > Fonctionnement du site </a></li>
-                <li><a href="#" > Conditions générales de vente </a></li>
-                <li><a href="#" > Données et confidentialité </a></li>
+                <li><a href="#" class="Noir"> Fonctionnement du site </a></li>
+                <li><a href="#" class="Noir"> Conditions générales de vente </a></li>
+                <li><a href="#" class="Noir"> Données et confidentialité </a></li>
             </ul>
             <ul>
                 <li class="NoirPlus"> Nos hébergements </li>
-                <li><a href="#" > Charte qualité </a></li>
-                <li><a href="#" > Soumettre votre hôtel </a></li>
+                <li><a href="#" class="Noir"> Charte qualité </a></li>
+                <li><a href="#" class="Noir"> Soumettre votre hôtel </a></li>
             </ul>
             <ul>
                 <li class="NoirPlus"> Assistance </li>
-                <li><a href="#" > Centre d'aide </a></li>
-                <li><a href="#" > Nous contacter </a></li>
+                <li><a href="#" class="Noir"> Centre d'aide </a></li>
+                <li><a href="#" class="Noir"> Nous contacter </a></li>
             </ul>
                 
         </footer>
