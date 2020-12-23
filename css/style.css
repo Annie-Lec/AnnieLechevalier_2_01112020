@@ -46,6 +46,7 @@ body{
     font-size: 14px;
     text-decoration: none;
     color: black;
+    margin-left: 10px;
 }
 .Noir{
     color:black;
@@ -468,38 +469,15 @@ p{
     margin-bottom: 5px;
 }
 
-/* Le CSS pour les tablettes *//* Le CSS pour les tablettes *//* Le CSS pour les tablettes *//* Le CSS pour les tablettes */
-/* Le CSS pour les tablettes *//* Le CSS pour les tablettes *//* Le CSS pour les tablettes *//* Le CSS pour les tablettes */
-/* Le CSS pour les tablettes *//* Le CSS pour les tablettes *//* Le CSS pour les tablettes *//* Le CSS pour les tablettes */
-
-@media (max-width: 1024px) {
-    body{
-        background-color: rgb(177, 221, 177);
-    }
-    
-  
-    p {
-      font-size: 12px;
-    }
-  }
   
   /* Le CSS pour les smartphones *//* Le CSS pour les smartphones *//* Le CSS pour les smartphones *//* Le CSS pour les smartphones *//* Le CSS pour les smartphones */
-  /* Le CSS pour les smartphones *//* Le CSS pour les smartphones *//* Le CSS pour les smartphones *//* Le CSS pour les smartphones */
-  /* Le CSS pour les smartphones *//* Le CSS pour les smartphones *//* Le CSS pour les smartphones *//* Le CSS pour les smartphones */
-  @media (max-width: 767px) {
+  /* *********************************************************************************************** */
+ /* *********************************************************************************************** */
+ /* *********************************************************************************************** */
+ /* *********************************************************************************************** */
+ @media (max-width: 767px) {
     
-    body{
-        background-color:rgb(214, 214, 171);
-    }
-    
-    .main-header{
-        width: 100%;
-        /*display: flex;
-        margin-top: 0px;*/
-        position: relative;
-    }
-    
-    
+      
     .menu{
         margin-top: 0px;
         display: flex;
@@ -507,21 +485,25 @@ p{
         flex-wrap: wrap;
         padding: 5px;
     }
+    .menu a{
+        font-size: 15px;
+        padding-top: 0px;
+    }
+  
     .petitMenu{
         display: grid;
-        /*justify-content: space-around;*/
         grid-template-columns: 50% 50%;
         width: 100%;
         position: absolute;
-        left: 10px;
+        left: 0px;
         top: 60px;
-        justify-self: center;
     }
-
     
     .petitMenu a{
         padding-bottom: 10px;
         border-bottom: 2px solid rgb(107, 99, 99);
+        text-align: center;
+        margin-left: 0;
     }
     /* Apparence au survol des liens */
     .petitMenu a:hover {
@@ -530,26 +512,24 @@ p{
     border-top: none;
     padding-bottom: inherit;
     }
-    .menu a{
-        font-size: 19px;
-        margin-left: 0px;
-        justify-content: space-between;
-        padding-top: 0px;
-        
-    }
+
     
         
     
     /*Section Filtre ..........................................................................................*/
     .sectionFiltre{
         display: block;
-        width: 100%;
-        position: relative;
-        top: 60px;
+        width: auto;
+        margin: 0;
+        padding: 30px 10px;
+    }
+    .filtreTitre h1{
+        font-size: 17px;       
     }
     .filtreTitre p {
-        font-size: 16px;
+        font-size: 13px;
     }
+
     
     .RechercheTexte{
         display: none;
@@ -561,7 +541,7 @@ p{
         border-radius: 10px;
     }
     .inputVille input{
-        font-size: 18px;
+        font-size: 16px;
     }
     .filtreDetails{
         display: block;
@@ -580,12 +560,13 @@ p{
         /*2 blocks seront l'un en dessous de l'autre*/
         display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 0px; 
-        margin-left: 30px; 
-        margin-right: 0px;
-        width: 110%;
-        position: relative;
-        top: 60px;
+        margin: 0; 
+       /* margin-left: 30px; 
+        margin-right: 0px;*/
+        width: auto;
+        /*position: relative;
+        top: 60px;*/
+        padding: 15px 0;
         
     }
     .bigboxPopu {
@@ -597,58 +578,53 @@ p{
     }
     #bigboxH {
         width: 100%;
-        background-color: rgb(242, 242, 242);
+        background-color: transparent;
         border-radius: 0px;
         padding-left: 0px;
         padding-right: 0px;
-        margin-right: 0px;
+        margin-right: 0;
     }
     .box1 {
         display: block;
+        padding: 0;
+    }
+    .fas.fa-chart-line{
+        padding-right: 15px;
     }
 
     /* Partie section activite .............................................................................*/
     .sectionActivites{    
         display: block;
-        position: relative;
-        top: 70px;
+        margin: 0;
+        width: auto;
     }
     #listeActivite{
         display: block;
     }
     .detailActivite{
         margin-bottom: 20px;
-        width: 140%;
-        margin-left: -10px;
+        width: auto;
+        margin-left: 10px;
     }
     .imageActivite {
-        width: 100%;
+       
         height: 110px;
-        border-radius: 20px 20px 0 0;
-        /*l'image couvre l'espace (zoom) demandé avec height et width : ne se déforme pas*/
-        object-fit: cover; 
+       
     }
     .imageActivite2 {
-        width: 100%;
+        
         height: 110px;
-        border-radius: 20px 20px 0 0;
-        /*l'image couvre l'espace (zoom) demandé avec height et width : ne se déforme pas*/
-        object-fit: cover; 
+   
     }
     .imageActivite3 {
-        width: 100%;
-        height: 110px;
-        border-radius: 20px 20px 0 0;
-        /*l'image couvre l'espace (zoom) demandé avec height et width : ne se déforme pas*/
-        object-fit: cover; 
+       
+        height: 110px;       
     }
 
     .boxFooter{
         display: block;
-        position: relative;
-        top: 80px;
-        margin-left: 0px;
-        width: 130%;
+        margin: 0;
+        width: auto;
     }
   }
 
