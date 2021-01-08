@@ -31,14 +31,14 @@ body{
 }
 /* Apparence au survol des liens */
 .menu a:hover {
-    color: blue;
-    border-top: 2px solid blue;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 .menu a:focus{
     color:gray;
 }
 .menu .bleuGras{
-    color:blue;
+    color:#0065FC;
     font-weight: bold;
 }
 .NoirPlus{
@@ -112,7 +112,7 @@ p{
     text-align: center;
     color: white;
     border-radius: 0 10px 10px 0;
-    background-color: blue;
+    background-color: #0065FC;
     cursor: pointer;
 }
 /*En fonction de la taille de l'écran, soit on affichera le texte rechercher sur le bouton, soit l'icone Loupe*/
@@ -129,7 +129,7 @@ p{
     line-height: 40px;
     font-size: 14px;
     border-radius: 10px 0 0 10px ;
-    background-color: rgb(242, 242, 242);
+    background-color: #F2F2F2;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -139,11 +139,11 @@ p{
     height: 40px;
     text-align: center;
     padding: 0;
-    border-top: solid 1px rgb(242, 242, 242); 
-    border-bottom: solid 1px rgb(242, 242, 242);
+    border-top: solid 1px #F2F2F2; 
+    border-bottom: solid 1px#F2F2F2;
 }
 .inputVille input{
-    border-color:rgb(242, 242, 242);
+    border-color:#F2F2F2;
     border: none;
     height: 40px;
     padding-left: 10px;
@@ -187,8 +187,8 @@ p{
     justify-content: center;
     /*alignement vertical*/
     align-items: center;
-    color: blue;
-    background-color:  rgb(222, 235, 255);
+    color: #0065FC;
+    background-color:  #DEEBFF;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -212,7 +212,7 @@ p{
     /*alignement vertical*/
     align-items: center;
     color:white;
-    background-color :blue;
+    background-color :#0065FC;
     border-radius: 50px;
 }
 .textInfo{
@@ -235,7 +235,7 @@ p{
 #bigboxH{
     /*la section hebergement est divisee de gauche à droite en 2 sous sections hebergement et les plus populaires respectivement 70% et 30%*/
     width: 70%;
-    background-color: rgb(242, 242, 242);
+    background-color:#F2F2F2;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -247,7 +247,7 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    background-color: rgb(242, 242, 242);
+    background-color:#F2F2F2;
     /*les angles de la boite sont légèrement arrondis*/
     border-radius: 20px;
 }
@@ -309,7 +309,7 @@ p{
 }
 /*couleur des étoiles*/
 .blue{
-    color :  rgb(0, 101, 252);
+    color : #0065FC ;
 }
 .gray{
     color : rgb(185, 185, 185); 
@@ -326,7 +326,7 @@ p{
 /*Les plus populaires dans la zone Hebergement toujours*/
 .bigboxPopu{
     width: 30%;
-    background-color: rgb(242, 242, 242);
+    background-color:#F2F2F2;
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
@@ -346,7 +346,7 @@ p{
 
 .box2{
     width: 100%;
-    background-color: rgb(242, 242, 242);
+    background-color: #F2F2F2;
     display: flex;
     border-radius: 20px;
     flex-direction: column;
@@ -365,6 +365,8 @@ p{
     margin: 10px;
     /*les éléments contenus dans détail (les children: les images par ex) ne déborderont pas du cadre*/
     overflow: hidden; 
+    /* la souris change de forme quand on pointe sur une zone détail popu*/
+    cursor: pointer;
 }
 .imagePopu{
     width: 110px;
@@ -400,6 +402,7 @@ p{
 
 
 #listeActivite{
+    /*les activités sont rangées en 4 colonnes de même largeur*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
@@ -410,15 +413,18 @@ p{
     /*les coins du container ne sont pas à angle droit mais un peu arrondis*/
     border-radius: 20px;
     /*ombre portée*/
-    box-shadow: 3px 4px 2px rgb(242, 242, 242);
+    box-shadow: 3px 4px 2px #F2F2F2;
     /*marge e ntre les bloc à gauche et à droite*/
     margin-left: 10px;
     margin-right: 10px;
     /*les éléments contenus dans détail (les children: les images par ex) ne déborderont pas du cadre*/
     overflow: hidden;
+    /* la souris change de forme quand on pointe sur une zone détail activite*/
+    cursor: pointer;
     
 }
 .imageActivite {
+    /*les colonnes 1 et 3 auront cette mise en page : hauteur fixée de l'image*/
     width: 100%;
     height: 380px;
     border-radius: 20px 20px 0 0;
@@ -426,6 +432,7 @@ p{
     object-fit: cover; 
 }
 .imageActivite2 {
+    /* pour les colonnes 2 et 4 : 3 images sont concernées par cette hauteur de 150*/
     width: 100%;
     height: 150px;
     border-radius: 20px 20px 0 0;
@@ -433,6 +440,7 @@ p{
     object-fit: cover; 
 }
 .imageActivite3 {
+    /*concerne uniquement l'ile du frioul : petite hauteur*/
     width: 100%;
     height: 110px;
     border-radius: 20px 20px 0 0;
@@ -451,7 +459,7 @@ p{
 
 /* Section Footer avec différents liens de navigation vers les autres pages du site ...................*/
 .boxFooter{
-    background-color: rgb(242, 242, 242);
+    background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
 }
@@ -460,7 +468,7 @@ p{
     font-size: 14px;
 }
 .boxFooter a:hover {
-    color: blue;
+    color: #0065FC;
 }
 .boxFooter ul {
     list-style-type: none;
@@ -546,8 +554,8 @@ p{
     }
     /* Apparence au survol des liens */
     .petitMenu a:hover {
-    color: blue;
-    border-bottom: 2px solid blue;
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
     border-top: none;
     padding-bottom: inherit;
     }
@@ -603,7 +611,7 @@ p{
     }
     .bigboxPopu {
         width: 100%;
-        background-color: rgb(242, 242, 242);
+        background-color: #F2F2F2;
         border-radius: 0px;
         padding-left: 0px;
         padding-right: 0px;
