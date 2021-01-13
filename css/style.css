@@ -526,10 +526,6 @@ p{
     
       
     .menu{
-    /*    margin-top: 0px;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;*/
         padding: 5px;
     }
     .menu a{
@@ -663,7 +659,6 @@ p{
         width: auto;
     }
     .affichePlus{
-
         margin-left: 20px;
     }
   }
